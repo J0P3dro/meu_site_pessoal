@@ -55,6 +55,10 @@ footer {
     padding: 50px;
 }
 
+footer li {
+    padding: 10px;
+}
+
 .button{
     border:0;
     color: #ffff;

@@ -5,16 +5,18 @@ body {
 
 header {
     padding: 50px;
-}
-header img {
+    position: relative;
+  }
+  
+  header img {
     width: 170px;
-    height: 170;
+    height: 170px;
     border-radius: 50%;
+    border: 3px solid #000;
     position: absolute;
     top: 15px;
     left: 10px;
-    border: 3px solid #000;
-}
+  }
 
 section {
     margin: 50px;
@@ -28,7 +30,7 @@ header, footer {
     background-color: #5F966C;
     text-align: center;
     color: white;
-}
+  }
 nav {
     background-color: #5AC073;   
     text-align: center;
@@ -53,11 +55,23 @@ nav ul li a{
 
 footer {
     padding: 50px;
+    text-align: center;
 }
 
-footer li {
-    padding: 10px;
+.social-links {
+    margin-top: 10px; 
 }
+
+.social-links a {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.social-links a:last-child {
+    margin-right: 0; 
+}
+
+
 
 .button{
     border:0;
@@ -78,3 +92,13 @@ footer li {
         margin: 50px;
     }
 }
+
+@media only screen and (max-width: 740px) {
+    header img {
+        position: static; /* Remover a posição absoluta */
+        float: left; /* Flutuar a imagem para a esquerda */
+        margin-right: 20px; /* Adicionar margem à direita para separar do texto */
+        margin-bottom: 20px; /* Adicionar margem inferior para separar do texto */
+    }
+}
+
